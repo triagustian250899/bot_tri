@@ -5,5 +5,9 @@
     "grammy": "^1.18.1",
     "node-fetch": "^3.3.2",
     "node-telegram-bot-api": "^0.61.0"
+  },
+  "main": "telegram_bot.js",
+  "scripts": {
+    "start": "node telegram_bot.js"
   }
 }
