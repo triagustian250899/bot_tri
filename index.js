@@ -46,6 +46,45 @@ dev-legacy.visionplus.id,110.50.83.172
   ctx.reply(message);
 });
 
+bot.command("bugxl", (ctx) => {
+  const bugxlMessage = `
+XL VISION SSL ONLY
+certify.alexametrics.com
+graph.facebook.com
+
+EDU XL WS/WSS
+us01st-cf.zoom.us
+zoomcares.zoom.us
+gopbxstatic-cf.zoom.us
+psoportal.zoom.us
+
+LINE PROXY
+104.21.71.112
+162.159.138.6
+sourcemaking.com
+cs-ocr.clova.line.me
+lb.clova.line.me
+
+BUG SOSMED WS/WSS
+investor.snap.com
+162.159.129.11
+ads-interfaces.sc-cdn.net
+smule.zendesk.com
+
+AXIS GAME WS
+104.16.106.96
+104.18.23.187
+Hostname: ws.flv.nimo.tv (Cloudflare)
+nf-asset.miniclippt.com
+104.16.109.96
+avatars.pool.miniclippt.com
+
+AKRAB WS/WSS
+cdn-settings.appsflyersdk.com
+104.18.22.10`;
+  ctx.reply(bugxlMessage);
+});
+
 bot.command("wifiid", (ctx) => {
   const message = `
 #Trik Cara Inject WifiID
