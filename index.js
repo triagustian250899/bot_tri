@@ -201,7 +201,18 @@ Daftar Perintah Bot:
   ctx.reply(message);
 });
 
+bot.on("new_chat_members", async (ctx) => {
+  const newMembers = ctx.message.new_chat_members;
+  for (const member of newMembers) {
+    const username = member.username || "No username";
+    const userId = member.id;
+    const welcomeMessage = `Welcome, ${username} (${userId}) to the group!`; // Pesan sambutan dengan ID/username
+    await ctx.reply(welcomeMessage);
+  }
+});
+
 bot.on("message", (ctx) => ctx.reply("Got another message!"));
+
 
 if (process.env.NODE_ENV === "production") {
   const app = express();
